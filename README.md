@@ -29,22 +29,26 @@ Step-7 : Run tests
     pytest tests
     pytest -m "tests/test_weather_forecast"
 
-Step-8 : Run models
+Step-8 : MLflow to track experiments of project
+    python main.py
+    mlflow ui
+
+Step-9 : Run models
     python model\model.py
     python model\hyperparameters.py
 
-Step-9 : Run models
+Step-10 : Run models
     pytest tests\test_model.py
     pytest tests\test_hyperparameters.py
 
-Step-10 : Run CI/CD pipeline locally
+Step-11 : Run CI/CD pipeline locally
     Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
     irm get.scoop.sh | iex
     scoop install act
     act --version
-    act
+    act -W ".github/workflows/ci-cd-pipeline.yml"
 
-Step-11 : Build and Run Docker Container
+Step-12 : Build and Run Docker Container
   Build Docker image
     docker build -t weather-forecast-app .
   Run Docker Container
@@ -62,5 +66,7 @@ Step-11 : Build and Run Docker Container
         "Precip Type_snow": 1
     }
   ]'
+
+  
     
-    act -W "M1 MLOps Foundation/.github/workflows/ci-cd-pipeline.yml"
+    
