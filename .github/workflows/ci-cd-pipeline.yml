@@ -28,7 +28,7 @@ jobs:
       - name: Pull DVC data
         run: |
           . venv/bin/activate
-          dvc pull
+          dvc pull --force
 
       - name: Verify DVC data
         run: |
@@ -68,7 +68,7 @@ jobs:
 
       - name: Pull DVC data
         run: |
-          dvc pull
+          dvc pull --force
 
       - name: Verify DVC data
         run: |
