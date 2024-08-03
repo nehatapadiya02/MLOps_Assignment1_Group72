@@ -16,7 +16,7 @@ def load_and_preprocess_data(data_path):
     # Data Preprocessing
     # Assuming 'Temperature (C)' is the target variable to predict
     X = data.drop(['Formatted Date', 'Summary', 'Daily Summary', 'Loud Cover', 'Temperature (C)'], axis=1)
-    y = data['Temperat9ure (C)']
+    y = data['Temperature (C)']
 
     # Convert categorical data to numeric, if necessary
     X = pd.get_dummies(X, columns=['Precip Type'], drop_first=True)
