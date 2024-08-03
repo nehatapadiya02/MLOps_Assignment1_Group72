@@ -3,7 +3,7 @@ import pandas as pd
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from main import load_and_preprocess_data, train_model
+from main import load_and_preprocess_data, train_and_log_model_with_mlflow
 
 # Use raw strings or double backslashes for paths
 DATASET_PATH = os.path.join('weather-forecast_csv', 'weatherHistory.csv')
@@ -27,7 +27,7 @@ def test_load_and_preprocess_data(sample_data):
 def test_train_model(sample_data):
     """Test the model training function."""
     features, labels = load_and_preprocess_data(DATASET_PATH)
-    model = train_model(features, labels)
+    model = train_and_log_model_with_mlflow(features, labels)
 
     assert model is not None, "Model should not be None."
     assert hasattr(model, "predict"), "Model should have a predict method."
