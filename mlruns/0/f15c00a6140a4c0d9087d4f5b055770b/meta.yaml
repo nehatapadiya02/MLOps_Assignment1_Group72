@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Neha_Personal/Books/Sem%203/MLOPS/Assignment/MLOps_Assignment1_Group72/mlruns/0/f15c00a6140a4c0d9087d4f5b055770b/artifacts
+end_time: 1722712354764
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f15c00a6140a4c0d9087d4f5b055770b
+run_name: angry-ox-811
+run_uuid: f15c00a6140a4c0d9087d4f5b055770b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722712341628
+status: 3
+tags: []
+user_id: shrey

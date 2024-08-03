@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Neha_Personal/Books/Sem%203/MLOPS/Assignment/MLOps_Assignment1_Group72/mlruns/0/89bc040bb053499c912ba2b18622d6c0/artifacts
+end_time: 1722712341616
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 89bc040bb053499c912ba2b18622d6c0
+run_name: bald-lamb-796
+run_uuid: 89bc040bb053499c912ba2b18622d6c0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722712316834
+status: 3
+tags: []
+user_id: shrey

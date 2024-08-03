@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Neha_Personal/Books/Sem%203/MLOPS/Assignment/MLOps_Assignment1_Group72/mlruns/0/2b54d0b360c643bca05da1f47f04422a/artifacts
+end_time: 1722712963148
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2b54d0b360c643bca05da1f47f04422a
+run_name: serious-foal-242
+run_uuid: 2b54d0b360c643bca05da1f47f04422a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722712956897
+status: 3
+tags: []
+user_id: shrey

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Neha_Personal/Books/Sem%203/MLOPS/Assignment/MLOps_Assignment1_Group72/mlruns/0/c7acf24a1daa496bb93d9789933f78bd/artifacts
+end_time: 1722712956880
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c7acf24a1daa496bb93d9789933f78bd
+run_name: treasured-roo-0
+run_uuid: c7acf24a1daa496bb93d9789933f78bd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722712943833
+status: 3
+tags: []
+user_id: shrey
