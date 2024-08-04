@@ -49,11 +49,11 @@ Step-11 : Run CI/CD pipeline locally
     act -W ".github/workflows/ci-cd-pipeline.yml"
 
 Step-12 : Build and Run Docker Container
-  Build Docker image
+  # Build Docker image
     docker build -t weather-forecast-app .
-  Run Docker Container
+  # Run Docker Container
     docker run -d -p 5000:5000 weather-forecast-app
-  Test Flask Application
+  # Test Flask Application
     Invoke-WebRequest -Uri "http://127.0.0.1:5000/predict" -Method POST -ContentType "application/json" -Body '[
     {
         
@@ -66,6 +66,36 @@ Step-12 : Build and Run Docker Container
         "Precip Type_snow": 1
     }
   ]'
+
+  Step-13 : DVC
+  # Initialize Git and DVC
+    git init
+    dvc init
+    
+  # Add initial dataset
+    dvc add weather-forecast_csv/weatherHistoryupdated.csv
+    git add weather-forecast_csv/weatherHistoryupdated.csv.dvc .gitignore
+    git commit -m "Add initial version of weatherHistoryupdated.csv"
+
+  # Update dataset to second version
+    echo "new data entry" >> weather-forecast_csv/weatherHistoryupdated.csv
+    dvc add weather-forecast_csv/weatherHistoryupdated.csv
+    git add weather-forecast_csv/weatherHistoryupdated.csv.dvc
+    git commit -m "Update weatherHistoryupdated.csv with new data"
+
+  # Update dataset to third version
+    echo "another new data entry" >> weather-forecast_csv/weatherHistoryupdated.csv
+    dvc add weather-forecast_csv/weatherHistoryupdated.csv
+    git add weather-forecast_csv/weatherHistoryupdated.csv.dvc
+    git commit -m "Add another update to weatherHistoryupdated.csv"
+
+  # View dataset version history
+    git log
+
+  # Revert to a previous dataset version
+    git checkout commit 7e21b9d83708512f7cde452196577ea810040507
+    dvc checkout
+
 
   
     
