@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Neha_Personal/Books/Sem%203/MLOPS/Assignment/MLOps_Assignment1_Group72/mlruns/0/480d6ceb91594359bad802408225540e/artifacts
+end_time: 1722761899526
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 480d6ceb91594359bad802408225540e
+run_uuid: 480d6ceb91594359bad802408225540e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722761881118
+status: 3
+tags: []
+user_id: shrey
