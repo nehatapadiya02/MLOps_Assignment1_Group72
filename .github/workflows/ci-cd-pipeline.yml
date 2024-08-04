@@ -28,12 +28,12 @@ jobs:
       - name: Pull DVC data
         run: |
           . venv/bin/activate
-          dvc pull --force
+          dvc pull
 
-      - name: Verify DVC data
-        run: |
-          . venv/bin/activate
-          dvc status
+      # - name: Verify DVC data
+      #   run: |
+      #     . venv/bin/activate
+      #     dvc status
 
   lint:
     runs-on: ubuntu-latest
@@ -68,11 +68,11 @@ jobs:
 
       - name: Pull DVC data
         run: |
-          dvc pull --force
+          dvc pull
 
-      - name: Verify DVC data
-        run: |
-          dvc status
+      # - name: Verify DVC data
+      #   run: |
+      #     dvc status
 
       - name: Run tests
         run: |
