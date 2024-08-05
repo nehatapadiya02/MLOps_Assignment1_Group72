@@ -135,12 +135,12 @@ jobs:
         run: |
           az aks get-credentials --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} --name ${{ secrets.AZURE_AKS_CLUSTER }}
 
-      - name: Set up Helm
-        uses: azure/setup-helm@v1
+      # - name: Set up Helm
+      #   uses: azure/setup-helm@v1
 
-      - name: Deploy to AKS using Helm
+      - name: Upgrade Helm Chart
         run: |
-          helm upgrade --install weather-forecast-app ./weather-forecast-app --set image.tag=${{ github.sha }}
+          helm upgrade --install weather-forecast-app ./weather-forecast-app --set image.tag=v1
 
       - name: Verify Deployment
         run: |
