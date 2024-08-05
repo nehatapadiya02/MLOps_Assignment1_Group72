@@ -116,7 +116,7 @@ jobs:
           docker push weatherforecastregistry.azurecr.io/weather-forecast-app:${{ github.sha }}
 
       - name: Set up Azure CLI
-        uses: azure/setup-azure-cli@v1
+        uses: azure/azure-cli-action@v1
         with:
           azure-cli-version: '2.0.72'
 
