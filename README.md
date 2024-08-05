@@ -68,31 +68,31 @@ Step-12 : Build and Run Docker Container
   ]'
 
   Step-13 : DVC
-  # Initialize Git and DVC
+  #Initialize Git and DVC
     git init
     dvc init
     
-  # Add initial dataset
+  #Add initial dataset
     dvc add weather-forecast_csv/weatherHistoryupdated.csv
     git add weather-forecast_csv/weatherHistoryupdated.csv.dvc .gitignore
     git commit -m "Add initial version of weatherHistoryupdated.csv"
 
-  # Update dataset to second version
+  #Update dataset to second version
     echo "new data entry" >> weather-forecast_csv/weatherHistoryupdated.csv
     dvc add weather-forecast_csv/weatherHistoryupdated.csv
     git add weather-forecast_csv/weatherHistoryupdated.csv.dvc
     git commit -m "Update weatherHistoryupdated.csv with new data"
 
-  # Update dataset to third version
+  #Update dataset to third version
     echo "another new data entry" >> weather-forecast_csv/weatherHistoryupdated.csv
     dvc add weather-forecast_csv/weatherHistoryupdated.csv
     git add weather-forecast_csv/weatherHistoryupdated.csv.dvc
     git commit -m "Add another update to weatherHistoryupdated.csv"
 
-  # View dataset version history
+  #View dataset version history
     git log
 
-  # Revert to a previous dataset version
+  #Revert to a previous dataset version
     git checkout commit 7e21b9d83708512f7cde452196577ea810040507
     dvc checkout
 
