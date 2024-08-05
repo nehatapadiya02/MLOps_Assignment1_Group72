@@ -49,11 +49,11 @@ Step-11 : Run CI/CD pipeline locally
     act -W ".github/workflows/ci-cd-pipeline.yml"
 
 Step-12 : Build and Run Docker Container
-  # Build Docker image
+  #Build Docker image
     docker build -t weather-forecast-app .
-  # Run Docker Container
+  #Run Docker Container
     docker run -d -p 5000:5000 weather-forecast-app
-  # Test Flask Application
+  #Test Flask Application
     Invoke-WebRequest -Uri "http://127.0.0.1:5000/predict" -Method POST -ContentType "application/json" -Body '[
     {
         
