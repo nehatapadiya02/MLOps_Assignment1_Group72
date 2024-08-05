@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: weather-forecast-deployment
+  labels:
+    app: weather-forecast
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: weather-forecast-app
+  template:
+    metadata:
+      labels:
+        app: weather-forecast-app
+    spec:
+      containers:
+      - name: weather-forecast-container
+        image: weatherforecastregistry.azurecr.io/weather-forecast-app:v1
+        ports:
+        - containerPort: 5000
+        # Optional: add environment variables if needed
+        # env:
+        # - name: ENV_VAR_NAME
+        #   value: "value"
