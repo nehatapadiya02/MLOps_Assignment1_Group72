@@ -1,0 +1,13 @@
+Start Time,Duration,Run ID,Name,Source Type,Source Name,User,Status,learning_rate,max_depth,model,n_estimators,mean_squared_error
+04-08-2024 14:28,7.6s,d52aeb2dd697456cb2f345bf585b95cc,,LOCAL,main.py,neha,FINISHED,,,LinearRegression,,0.898542839
+04-08-2024 14:28,18.4s,480d6ceb91594359bad802408225540e,,LOCAL,main.py,neha,FINISHED,0.1,,GradientBoostingRegressor,100,0.041971198
+04-08-2024 14:27,35.3s,44e8e160d55845db8c710743956a56f1,,LOCAL,main.py,neha,FINISHED,,10,RandomForestRegressor,100,0.008440551
+04-08-2024 00:52,6.3s,2b54d0b360c643bca05da1f47f04422a,serious-foal-242,LOCAL,main.py,neha,FINISHED,,,LinearRegression,,0.898542839
+04-08-2024 00:52,13.0s,c7acf24a1daa496bb93d9789933f78bd,treasured-roo-0,LOCAL,main.py,neha,FINISHED,0.1,,GradientBoostingRegressor,100,0.041971198
+04-08-2024 00:52,23.3s,b9dde4097fe247fba8158585d3d4dbf0,unruly-whale-850,LOCAL,main.py,neha,FINISHED,,10,RandomForestRegressor,100,0.008485741
+04-08-2024 00:42,6.3s,ba265821698444778e5169fc6ccffe6f,vaunted-sheep-369,LOCAL,main.py,neha,FINISHED,,,LinearRegression,,0.898542839
+04-08-2024 00:42,13.1s,f15c00a6140a4c0d9087d4f5b055770b,angry-ox-811,LOCAL,main.py,neha,FINISHED,0.1,,GradientBoostingRegressor,100,0.041971198
+04-08-2024 00:41,24.8s,89bc040bb053499c912ba2b18622d6c0,bald-lamb-796,LOCAL,main.py,neha,FINISHED,,10,RandomForestRegressor,100,0.008232987
+03-08-2024 22:45,7.7s,402f33e64d824ff99264898e6ac652f5,honorable-pug-784,LOCAL,main.py,neha,FINISHED,,,LinearRegression,,0.898542839
+03-08-2024 22:45,17.8s,93416be414a441cd99622c220a77c079,judicious-eel-875,LOCAL,main.py,neha,FINISHED,0.1,,GradientBoostingRegressor,100,0.041971198
+03-08-2024 22:44,33.9s,9f956af2449e4f5c9c0a96de2644a9f8,respected-lynx-870,LOCAL,main.py,neha,FINISHED,,10,RandomForestRegressor,100,0.008252233
